@@ -4,9 +4,9 @@
   "main": "dist/app.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --exec tsx src/index.ts",
+    "dev": "nodemon --exec tsx src/app.ts",
     "build": "tsc && cp src/data/*.json dist/data",
-    "start": "node dist/index.js"
+    "start": "node dist/app.js"
   },
   "keywords": [],
   "author": "",
