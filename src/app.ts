@@ -20,6 +20,13 @@ const server = createServer((req: IncomingMessage, res: ServerResponse) => {
     return sendJson(res, 405, { error: "Method not allowed" });
   }
 
+  if (url === "/health" || url === "/status") {
+    return sendJson(res, 200, {
+      status: "UP",
+      timestamp: new Date().toISOString(),
+    });
+  }
+
   // 1. GET /provinces
   if (url === "/provinces") {
     return sendJson(res, 200, provinceData);
