@@ -1,27 +1,21 @@
 {
   "name": "iran-places-api",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "dist/app.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --exec tsx src/app.ts",
+    "dev": "nodemon --exec tsx src/index.ts",
     "build": "tsc && cp src/data/*.json dist/data",
-    "start": "node dist/app.js"
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.7.9",
-    "nodemon": "^3.1.7",
-    "tsx": "^4.19.1",
+    "@types/node": "^22.20.0",
+    "nodemon": "^3.1.14",
+    "tsx": "^4.22.5",
     "typescript": "^5.6.3"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.1"
   }
 }

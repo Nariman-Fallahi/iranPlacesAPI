@@ -1,11 +1,11 @@
-export type ProvinceDataType = {
+export type Province = {
   id: number;
   name: string;
   slug: string;
   tel_prefix: string;
 };
 
-export type CitiesDataDataType = {
+export type City = {
   id: number;
   name: string;
   slug: string;
